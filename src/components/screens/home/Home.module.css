@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.car {
+    padding-top: 20px;
+}
+.image {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+}
+.info {
+    padding: 10px;
+    text-align: center;
+}
+.info h2 {
+    margin-bottom: 10px;
+}
+.button {
+    appearance: none;
+    background-color: #1a1719;
+    color: white;
+    border: none;
+    font-family: 'Tektur', cursive;
+    padding: 3px;
+}
+.button:hover {
+    cursor: pointer;
+    text-shadow: 0 0 10px #fff,
+    0 0 30px #fff,
+    0 0 80px #fff;
+}
