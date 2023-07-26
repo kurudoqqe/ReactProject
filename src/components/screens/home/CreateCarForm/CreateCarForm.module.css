@@ -9,6 +9,7 @@
 .form input {
     padding: 5px 10px;
     border: none;
+    outline: none;
     background-color: #1a1719;
     color: white;
     font-family: 'Tektur', cursive;
