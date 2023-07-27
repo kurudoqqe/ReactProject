@@ -1,18 +1,20 @@
-import React, {useMemo} from 'react'
-import {cars} from '../../data/cars.data'
+import React, {useEffect, useState} from 'react'
+import {cars as carsData} from '../../data/cars.data'
 import CarItem from "./car-item/CarItem";
 import CreateCarForm from "./CreateCarForm/CreateCarForm";
 const Home = () => {
-    const filtredCars = useMemo(
-        () => cars.filter(car => car.price > 120000), []
-    )
+    const [cars, setCars] = useState(carsData)
+
+    useEffect(() => {
+        console.log(cars)
+    }, [cars])
     return (
         <div style={{textAlign:'center'}}>
             <h1>Cars Catalog</h1>
-            <CreateCarForm/>
+            <CreateCarForm setCars={setCars}/>
             <div>
-                {filtredCars.length ?
-                    filtredCars.map(car => (
+                {cars.length ?
+                    cars.map(car => (
                         <CarItem key={car.id} car={car}/>
                     ))
                     : <p>There are no cars</p>

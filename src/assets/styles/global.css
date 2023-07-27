@@ -12,3 +12,17 @@ body {
 h1 {
     margin-bottom: 20px;
 }
+.btn {
+    appearance: none;
+    background-color: #1a1719;
+    color: white;
+    border: none;
+    font-family: 'Tektur', cursive;
+    padding: 3px;
+}
+.btn:hover {
+    cursor: pointer;
+    text-shadow: 0 0 10px #fff,
+    0 0 30px #fff,
+    0 0 80px #fff;
+}
