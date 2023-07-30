@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.image {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60vw;
+    height: 80vh;
+}
+.text {
+    margin-top: 20px;
+    text-align: center;
+}
+.description {
+    font-size: 15px;
+    width: 75vw;
+    margin: auto;
+    padding: 10px;
+}
